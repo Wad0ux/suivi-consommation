@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Admin</title>
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <h1>Tableau de bord Admin</h1>
+  <button onclick="logout()">Déconnexion</button>
+  <button onclick="exportCSV()">Exporter en CSV</button>
+  <table id="tableau">
+    <thead><tr><th>Client</th><th>Produit</th><th>Quantité</th><th>Date</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>

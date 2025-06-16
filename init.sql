@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS consommations (
+  id SERIAL PRIMARY KEY,
+  client TEXT NOT NULL,
+  produit TEXT NOT NULL,
+  quantite INTEGER NOT NULL,
+  date TIMESTAMP DEFAULT NOW()
+);
