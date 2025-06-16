@@ -3,7 +3,7 @@ async function verifierAdmin() {
   if (!token) return window.location.href = "login.html";
 }
 async function chargerConsommations() {
-  const res = await fetch('https://suivi-consommation.onrender.com');
+  const res = await fetch('https://suivi-consommation.onrender.com/consommation');
   const data = await res.json();
   const tbody = document.querySelector('#tableau tbody');
   tbody.innerHTML = '';
