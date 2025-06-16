@@ -3,7 +3,7 @@ document.getElementById('form-consommation').addEventListener('submit', async (e
   const client = document.getElementById('client').value;
   const produit = document.getElementById('produit').value;
   const quantite = document.getElementById('quantite').value;
-  await fetch('https://TON-BACKEND.onrender.com/consommation', {
+  await fetch('https://suivi-consommation.onrender.com/consommation', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ client, produit, quantite })
